@@ -1,0 +1,5 @@
+SELECT DISTINCT code, model, color, type, price
+FROM Printer
+WHERE color = 'y' (SELECT color
+ FROM Printer
+ )

@@ -1,0 +1,4 @@
+SELECT DISTINCT maker
+FROM Product
+INNER JOIN PC ON PC.speed >= 450
+WHERE PC.model=Product.model
